@@ -1,4 +1,4 @@
-package com.cruning.smartway.ui.theme
+package com.cruning.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
