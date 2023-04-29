@@ -6,10 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.cruning.presentation.ui.theme.SmartwayTheme
+import androidx.navigation.compose.rememberNavController
+import com.cruning.presentation.navigation.SmartwayNavHost
+import com.cruning.presentation.theme.SmartwayTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -18,26 +18,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SmartwayTheme {
+                val navController = rememberNavController()
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting()
+                    SmartwayNavHost(navController = navController)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(modifier: Modifier = Modifier) {
-
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SmartwayTheme {
-        Greeting()
     }
 }
