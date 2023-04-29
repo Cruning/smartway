@@ -1,4 +1,4 @@
-package com.cruning.presentation.ui.theme
+package com.cruning.presentation.theme
 
 import android.app.Activity
 import android.os.Build

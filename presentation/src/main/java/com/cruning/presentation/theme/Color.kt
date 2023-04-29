@@ -1,4 +1,4 @@
-package com.cruning.presentation.ui.theme
+package com.cruning.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

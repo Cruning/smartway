@@ -22,6 +22,6 @@ class RestModule {
     }
 
     companion object {
-        private const val baseUrl = ""
+        private const val baseUrl = "https://api.unsplash.com/"
     }
 }
