@@ -1,4 +1,4 @@
-package com.cruning.smartway.ui.theme
+package com.cruning.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
