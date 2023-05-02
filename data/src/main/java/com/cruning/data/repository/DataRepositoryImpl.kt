@@ -44,7 +44,7 @@ class DataRepositoryImpl @Inject constructor(
                     per_page = count_photos,
                 ).map {
                     ImageUrl(
-                        url = it.urls.raw
+                        url = it.urls.regular
                     )
                 }
                 LoadResult.Page(
